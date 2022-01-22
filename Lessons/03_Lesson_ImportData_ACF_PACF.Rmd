@@ -37,6 +37,18 @@ For this first example we will import water inflow data for reservoirs in Brazil
 #I am calling it raw for now because it's data as it is in the file
 raw_inflow_data <- read.table(file="/Users/lmm89/OneDrive/Duke_University/9_Spring2022/ENV790_TSA/Git_Repo/ENV790_TimeSeriesAnalysis_Sp2022_v2/Data/inflowtimeseries.txt",header=FALSE,skip=0)
 
+###
+# Method 1. use ".."
+# Lazy/smart/efficient way to do it
+raw_inflow_data <- read.table(file="../Data/inflowtimeseries.txt",header=FALSE,skip=0)
+
+# Method 2. use getwd()
+# use this to find your working directory
+getwd() 
+# copy and paste the result below
+raw_inflow_data <- read.table(file="/Users/stefanchen/Documents/Duke/Classes/Spring 2022/Time Series Analysis TA/ENV790_TimeSeriesAnalysis_Sp2022/Lessons/Data/inflowtimeseries.txt",header=FALSE,skip=0)
+###
+
 #If you want specific columns just trim the table
 raw_inflow_data <- raw_inflow_data[,1:5] #the space before the comma means you want all rows
                                  #and 1:5 means all columns from 1 to 5
