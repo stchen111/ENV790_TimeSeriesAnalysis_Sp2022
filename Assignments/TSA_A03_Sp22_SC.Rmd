@@ -40,40 +40,44 @@ R packages needed for this assignment:"forecast","tseries", and "Kendall". Insta
 # Plot - 2 pts each (18 total)
 Create a plot window that has one row and three columns. And then for each object on your data frame, fill the plot window with time series plot, ACF and PACF. You may use the some code form A2, but I want all three plots on the same window this time. (Hint: use par() function)
  
-### Q2 (9)
+### Q2 (10)
 # Trend - 3 pts each (9 total)
+# Completeness 1
 From the plot in Q1, do the series Total Biomass Energy Production, Total Renewable Energy Production, Hydroelectric Power Consumption appear to have a trend? If yes, what kind of trend?
 
-### Q3 (18)
-# lm - 3 pts each (18 total)
+### Q3 (16)
+# lm - 4 pts each (12 total)
+# discussion - 4 pts
 Use the *lm()* function to fit a linear trend to the three time series. Ask R to print the summary of the regression. Interpret the regression output, i.e., slope and intercept. Save the regression coefficients for further analysis.
  
-### Q4 (15)
+### Q4 (16)
 # detrend - 2 pts each (6 total)
 # plot - 2 pts each (6 total)
-# discuss 3 pts
+# discuss 4 pts
 Use the regression coefficients from Q3 to detrend the series. Plot the detrended series and compare with the plots from Q1. What happened? Did anything change?
 
-### Q5 (6)
+### Q5 (10)
 # plot - 2 pts each (6 total)
+# discussion 4 pts
 Plot ACF and PACF for the detrended series and compare with the plots from Q1. Did the plots change? How?
 
 ## Seasonal Component
 
 Set aside the detrended series and consider the original series again from Q1 to answer Q6 to Q8.
 
-### Q6 (6)
-# plot - 2 pts each (6 total)
+### Q6 (10)
+# discussion - 2 pts each (6 total)
+# reasoning 4 pts
 Do the series seem to have a seasonal trend? Which serie/series? Use function *lm()* to fit a seasonal means model (i.e. using the seasonal dummies) to this/these time series. Ask R to print the summary of the regression. Interpret the regression output. Save the regression coefficients for further analysis.
 
-### Q7 (6)
+### Q7 (10)
 # plot - 2 pts each (6 total)
-# - discuss 3 pts
+# - discuss 4 pts
 Use the regression coefficients from Q6 to deseason the series. Plot the deseason series and compare with the plots from part Q1. Did anything change?
 
-### Q8 (9)
+### Q8 (10)
 # plot - 2 pts each (6 total)
-# discuss 3 pts
+# discuss 4 pts
 Plot ACF and PACF for the deseason series and compare with the plots from Q1. Did the plots change? How?
 
 
