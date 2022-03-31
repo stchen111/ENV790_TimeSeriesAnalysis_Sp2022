@@ -30,7 +30,8 @@ Packages needed for this assignment: "forecast","tseries". Do not forget to load
 ```
 
 
-## Q1
+## Q1 (24 pts)
+# 12 pts each
 Describe the important characteristics of the sample autocorrelation function (ACF) plot and the partial sample autocorrelation function (PACF) plot for the following models: 
 
 \begin{enumerate}[label=(\alph*)]
@@ -45,7 +46,10 @@ Describe the important characteristics of the sample autocorrelation function (A
 
 \end{enumerate}
 
-## Q2
+## Q2 (25 pts)
+# Plot - 5 pts each section
+# Discussion (identify) 5 pts each
+# Repeat 5 pts
 Recall that the non-seasonal ARIMA is described by three parameters ARIMA$(p,d,q)$ where $p$ is the order of the autoregressive component, $d$ is the number of times the series need to be differenced to obtain stationarity and $q$ is the order of the moving average component. If we don't need to difference the series, we don't need to specify the "I" part and we can use the short version, i.e., the ARMA$(p,q)$. Consider three models: ARMA(1,0), ARMA(0,1) and ARMA(1,1) with parameters $\phi=0.6$ and $\theta= 0.9$. The $\phi$ refers to the AR coefficient and the $\theta$ refers to the MA coefficient. Use R to generate $n=100$ observations from each of these three models
 
 ```{r}
@@ -85,8 +89,9 @@ Recall that the non-seasonal ARIMA is described by three parameters ARIMA$(p,d,q
 
 \end{enumerate}
 
-## Q3
-
+## Q3 (25 pts)
+# model - 10 pts
+# coefficients: AR, MA, SAR - 15 pts
 Consider the ARIMA model $y_t=0.7*y_{t-1}-0.25*y_{t-12}+a_t-0.1*a_{t-1}$
 
 \begin{enumerate}[label=(\alph*)]
@@ -96,8 +101,12 @@ Consider the ARIMA model $y_t=0.7*y_{t-1}-0.25*y_{t-12}+a_t-0.1*a_{t-1}$
 \item Also from the equation what are the values of the parameters, i.e., model coefficients. 
 
 \end{enumerate}
-## Q4
 
+
+## Q4 (26 pts)
+# plot - 8 pts each (16)
+# Discussion (if the plots are well representing the model you simulated) - 5 pts
+# Would you be able to identify the order of both non-seasonal and seasonal components from the plots - 5 pts
 Plot the ACF and PACF of a seasonal ARIMA$(0, 1)\times(1, 0)_{12}$ model with $\phi =0 .8$ and $\theta = 0.5$ using R. The $12$ after the bracket tells you that $s=12$, i.e., the seasonal lag is 12, suggesting monthly data whose behavior is repeated every 12 months. You can generate as many observations as you like. Note the Integrated part was omitted. It means the series do not need differencing, therefore $d=D=0$. Plot ACF and PACF for the simulated data. Comment if the plots are well representing the model you simulated, i.e., would you be able to identify the order of both non-seasonal and seasonal components from the plots? Explain.
 
 ```{r}
